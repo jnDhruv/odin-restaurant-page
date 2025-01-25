@@ -2,7 +2,98 @@
     box-sizing: border-box;
 }
 
-body {
+/* reset */
+body,
+h1 {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Quicksand;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background-color: black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+
+    padding: 0 25px;
+
+    & h1 {
+        font-size: 3rem;
+    }
+
+    color: white;
+    user-select: none;
+}
+
+header::before {
+    content: "";
+    background: url('../imgs/headerBG.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+    background-color: white;
+    opacity: 0.4;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.25s;
+
+    & div {
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: Quicksand;
+
+        color: white;
+    }
+
+    &+.nav-button {
+        margin-left: 30px;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.selected {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.github {
+    justify-self: right;
+
+    & img {
+        width: 50px;
+    }
 }
