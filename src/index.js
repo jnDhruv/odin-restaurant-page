@@ -3,6 +3,7 @@ import "./styles/content.css";
 
 import loadHomePage from "./modules/home";
 import loadMenuPage from "./modules/menu";
+import loadContagePage from "./modules/contact";
 
 function setSelectedButton(button) {
     const selected = document.querySelectorAll('.selected');
@@ -29,6 +30,11 @@ function addEventListeners() {
     menuButton.addEventListener('click', () => {
         setSelectedButton(menuButton);
         loadMenuPage();
+    });
+
+    contactButton.addEventListener('click', () => {
+        setSelectedButton(contactButton);
+        loadContagePage();
     });
 }
 
