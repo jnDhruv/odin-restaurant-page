@@ -1,4 +1,4 @@
-import app1 from "../imgs/dishes/crispy-paneer.jpg";
+import app1 from "../imgs/dishes/paneer-tikka.jpg";
 import app2 from "../imgs/dishes/spring-rolls.jpg";
 
 import salad1 from "../imgs/dishes/tomato-soup.jpg";
@@ -49,7 +49,7 @@ function createMenuPage() {
     const appetizers = document.createElement('div');
     appetizers.classList.add('menu-category');
     appetizers.appendChild(createCategoryHeading("Appetizers"));
-    appetizers.appendChild(createCategoryItem(app1, "Crispy Paneer Bites"));
+    appetizers.appendChild(createCategoryItem(app1, "Paneer Tikka"));
     appetizers.appendChild(createCategoryItem(app2, "Vegetable Spring Rolls"));
 
     const salads = document.createElement('div');
