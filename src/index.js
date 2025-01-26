@@ -21,6 +21,7 @@ function addEventListeners() {
     const homeButton = document.querySelector('#home');
     const menuButton = document.querySelector('#menu');
     const contactButton = document.querySelector('#contact');
+    const githubButton = document.querySelector('#github');
 
     homeButton.addEventListener('click', () => {
         setSelectedButton(homeButton);
@@ -35,6 +36,10 @@ function addEventListeners() {
     contactButton.addEventListener('click', () => {
         setSelectedButton(contactButton);
         loadContagePage();
+    });
+
+    githubButton.addEventListener('click', () => {
+        window.location.href = "https://github.com/jnDhruv/restaurant-page";
     });
 }
 
