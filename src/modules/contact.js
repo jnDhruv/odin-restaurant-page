@@ -35,11 +35,11 @@ function createContactPage() {
     return contact;
 }
 
-function loadContagePage() {
+function loadContactPage() {
     const content = document.querySelector("#content");
     content.textContent = "";
 
     content.appendChild(createContactPage());
 }
 
-export default loadContagePage;
+export default loadContactPage;
