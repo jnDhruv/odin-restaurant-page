@@ -1,5 +1,5 @@
 # Restaurant Page
-A sample webpage for a made-up restaurant in Delhi. [Open Live Preview](https://jndhruv.github.io/restaurant-page/).
+A sample webpage for a made-up restaurant in Delhi. [Open Live Preview](https://jndhruv.github.io/odin-restaurant-page/).
 Built using:
 - HTML
 - CSS
